@@ -54,15 +54,25 @@ body{
     font-size:1.5rem;
     cursor:pointer;
 }
-/* HERO */
 
+/* HERO - Updated for image */
 .hero{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
     background: linear-gradient(135deg,#0f172a,#1e293b);
+    padding: 80px 20px;
+}
+
+.hero-container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-content{
+    text-align: center;
 }
 
 .hero-content h1{
@@ -77,32 +87,56 @@ body{
 .hero-content h2{
     font-weight:400;
     margin-bottom:15px;
+    font-size: 1.5rem;
 }
 
 .hero-content p{
     opacity:0.8;
     margin-bottom:25px;
+    font-size: 1.1rem;
+}
+
+/* Profile Image */
+.hero-image{
+    margin: 30px 0;
+}
+
+.profile-img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+    transition: all 0.3s ease;
+}
+
+.profile-img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.5);
 }
 
 /* BUTTONS */
-
 .hero-buttons{
     display:flex;
     gap:15px;
     justify-content:center;
+    margin-top: 20px;
 }
 
 .btn{
-    padding:12px 22px;
+    padding:12px 30px;
     background:#38bdf8;
     color:black;
     text-decoration:none;
     border-radius:6px;
     transition:0.3s;
+    font-weight: 500;
 }
 
 .btn:hover{
     transform:translateY(-3px);
+    background: #0ea5e9;
 }
 
 .outline{
@@ -115,7 +149,6 @@ body{
     background:#38bdf8;
     color:black;
 }
-
 
 /* Container */
 .container {
@@ -252,6 +285,16 @@ body{
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 20px;
@@ -269,13 +312,28 @@ body{
         font-size: 2.2rem;
     }
     
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 200px;
+        text-align: center;
+    }
+    
     .quick-info {
         flex-direction: column;
         gap: 15px;
-    }
-    
-    .achievements-grid {
-        grid-template-columns: 1fr;
     }
     
     .footer-content {
@@ -289,12 +347,20 @@ body{
 }
 
 @media (max-width: 480px) {
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
+    .hero-content h1 {
+        font-size: 1.8rem;
     }
     
-    .btn {
-        width: 200px;
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
     }
 }
