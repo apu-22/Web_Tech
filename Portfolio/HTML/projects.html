@@ -4,103 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ApuDev - Projects</title>
     <link rel="stylesheet" href="../CSS/project.css">
 </head>
 
 <body>
 
+    <!-- NAVBAR (optional - add if you want navigation) -->
+    <nav class="navbar">
+        <div class="logo">ApuDev</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <section id="projects" class="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <p class="section-subtitle">Here are some of my recent works</p>
 
-        <h2 class="section-title">Featured Projects</h2>
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="cpp">C++</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+        </div>
 
-        <div class="project-container">
-
-            <!-- Project Card -->
-            <div class="card">
-                <img src="../images/Pac-Man1.png" alt="Project Screenshot">
-
+        <div class="project-container" id="projectContainer">
+            <!-- Project Card 1 -->
+            <div class="card" data-category="java">
+                <div class="card-image">
+                    <img src="../images/Pac-Man1.png" alt="PacMan Game">
+                    <div class="card-overlay">
+                        <span class="project-type">Java Game</span>
+                    </div>
+                </div>
                 <div class="card-content">
-                    <h3>PacMan Game (Java)</h3>
-
-                    <p>
-                        OOP based desktop game implementing inheritance,
-                        sound effects, and interactive gameplay.
-                    </p>
-
+                    <h3>PacMan Game</h3>
+                    <p>OOP based desktop game implementing inheritance, sound effects, and interactive gameplay.</p>
                     <div class="tags">
                         <span>Java</span>
                         <span>Swing</span>
                         <span>OOP</span>
                     </div>
-
                     <div class="card-buttons">
-                        <a href="#" class="btn small">Live</a>
-                        <a href="#" class="btn outline small">Code</a>
+                        <a href="#" class="btn small">🔗 Live</a>
+                        <a href="#" class="btn outline small">💻 Code</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project Card -->
-            <div class="card">
-                <img src="../images/snake1.png" alt="Project Screenshot">
-
+            <!-- Project Card 2 -->
+            <div class="card" data-category="cpp">
+                <div class="card-image">
+                    <img src="../images/snake1.png" alt="Snake Game">
+                    <div class="card-overlay">
+                        <span class="project-type">C++ Game</span>
+                    </div>
+                </div>
                 <div class="card-content">
-                    <h3>Snake Game (SDL2)</h3>
-
-                    <p>
-                        Built using C++ SDL2 graphics with bonus food
-                        and collision mechanics.
-                    </p>
-
+                    <h3>Snake Game</h3>
+                    <p>Built using C++ SDL2 graphics with bonus food and collision mechanics.</p>
                     <div class="tags">
                         <span>C++</span>
                         <span>SDL2</span>
                         <span>Game Dev</span>
                     </div>
-
                     <div class="card-buttons">
-                        <a href="#" class="btn small">Live</a>
-                        <a href="#" class="btn outline small">Code</a>
+                        <a href="#" class="btn small">🔗 Live</a>
+                        <a href="#" class="btn outline small">💻 Code</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project Card -->
-            <div class="card">
-                <img src="../images/calculator.png" alt="Calculator Screenshot">
-
+            <!-- Project Card 3 -->
+            <div class="card" data-category="web">
+                <div class="card-image">
+                    <img src="../images/calculator.png" alt="Calculator">
+                    <div class="card-overlay">
+                        <span class="project-type">Web App</span>
+                    </div>
+                </div>
                 <div class="card-content">
-                    <h3>Calculator (Stack Based)</h3>
-
-                    <p>
-                        Web calculator implementing stack-based expression
-                        evaluation with responsive UI.
-                    </p>
-
+                    <h3>Stack Calculator</h3>
+                    <p>Web calculator implementing stack-based expression evaluation with responsive UI.</p>
                     <div class="tags">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                         <span>Stack</span>
                     </div>
-
                     <div class="card-buttons">
-                        <a href="#" class="btn small">Live</a>
-                        <a href="#" class="btn outline small">Code</a>
+                        <a href="#" class="btn small">🔗 Live</a>
+                        <a href="#" class="btn outline small">💻 Code</a>
                     </div>
                 </div>
             </div>
-            
-            
 
+            <!-- Project Card 4 -->
+            <div class="card" data-category="web">
+                <div class="card-image">
+                    <img src="../images/to_do_list.png" alt="Todo App">
+                    <div class="card-overlay">
+                        <span class="project-type">Web App</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>To-Do List App</h3>
+                    <p>Task management app storing data in browser local storage with dynamic DOM updates.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#" class="btn small">🔗 Live</a>
+                        <a href="#" class="btn outline small">💻 Code</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
-    <section id="skills" class="dummy">Skills Section</section>
-    <section id="contact" class="dummy">Contact Section</section>
 
-
+    <script src="../JS/project.js"></script>
 </body>
 
 </html>
