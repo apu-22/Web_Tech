@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/skill.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">ApuDev</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Here are my technical expertise and technologies I work with</p>
+            </div>
+
+            <!-- Skills Filtering -->
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+
+            <!-- Skills Container -->
+            <div class="skills-container" id="skillsContainer">
+            </div>
+
+            <!--: Skills Progress Bars -->
+            <div class="skills-progress-section">
+                <h3 class="skills-subtitle">Technical Proficiency</h3>
+                <div class="progress-bars" id="progressBars">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../JS/skill.js"></script>
+</body>
+
+</html>
