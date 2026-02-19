@@ -1,4 +1,4 @@
-const text = "I build scalable applications and solve algorithmic problems.";
+const text = "I'm trying to build scalable applications and solve algorithmic problems.";
 let i = 0;
 
 function typing() {
