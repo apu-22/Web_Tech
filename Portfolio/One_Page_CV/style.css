@@ -1,0 +1,151 @@
+/* style.css - Professional CV Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* Main CV Card */
+.cv-container {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+    padding: 35px 40px;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eef2f6;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a2634;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+
+.header .subhead {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4b6f8c;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 14px;
+    color: #3e5a70;
+    background: #f8fafd;
+    padding: 10px 20px;
+    border-radius: 50px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* 2-Column Grid Layout */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Section Headings */
+.section {
+    margin-bottom: 25px;
+    break-inside: avoid;
+}
+
+.section h2 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #dde5ed;
+    padding-bottom: 5px;
+}
+
+.section .content {
+    font-size: 14px;
+    color: #2d3f4f;
+}
+
+/* Lists */
+.section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: #2d3f4f;
+}
+
+.section li::before {
+    content: "•";
+    color: #4b6f8c;
+    font-weight: bold;
+    position: absolute;
+    left: 5px;
+}
+
+/* Achievement items with icons (optional, but nice) */
+.section li strong {
+    color: #1a2b3c;
+    font-weight: 600;
+}
+
+/* Responsive for small screens */
+@media (max-width: 700px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .cv-container {
+        padding: 25px 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 5px;
+        border-radius: 20px;
+        background: transparent;
+    }
+}
+
+/* Print-friendly styles */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    .cv-container {
+        box-shadow: none;
+        padding: 20px;
+    }
+}
