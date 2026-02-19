@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">ApuDev</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="contact-title">Contact Me</h2>
+            <p class="contact-subtitle">Let's work together</p>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Get in touch</h3>
+                    <p><strong>Email:</strong> mdapurayhan1729@gmail.com</p>
+                    <p><strong>Phone:</strong> +880 1306458664</p>
+                    <p><strong>Location:</strong> Sylhet, Bangladesh</p>
+
+                    <div class="social-simple">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send message</h3>
+                    <form id="simpleContactForm">
+                        <input type="text" id="simpleName" placeholder="Your Name" required>
+                        <input type="email" id="simpleEmail" placeholder="Your Email" required>
+                        <textarea id="simpleMessage" rows="4" placeholder="Your Message" required></textarea>
+                        <button type="submit" id="simpleSubmitBtn">Send</button>
+                    </form>
+                    <div id="simpleFormMessage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../JS/contact.js"></script>
+</body>
+
+</html>
